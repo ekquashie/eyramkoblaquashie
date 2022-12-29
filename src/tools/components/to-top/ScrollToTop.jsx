@@ -21,8 +21,12 @@ const ScrollToTop = () => {
     }
   }
 
+  const scrollToTop = () => {
+    window.scrollTo(0,0)
+  }
+
   return (
-    <div onMouseOver={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
+    <div onClick={() => scrollToTop()} onMouseOver={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
          className={`${showToTop ? 'block': 'hidden'} animate-fadeIn z-50 fixed right-10 bottom-10 flex justify-center items-center w-16 h-16 rounded-full bg-white drop-shadow-lg cursor-pointer`}>
       <img alt="falcon 9" height={10} width={8} src={falcon9} className={`${hovered ? "animate-bounce1" : ""}`}/>
     </div>
