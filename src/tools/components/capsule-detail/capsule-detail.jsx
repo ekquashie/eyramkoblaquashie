@@ -14,7 +14,7 @@ const CapsuleDetail = ({capsule}) => {
         <CapsuleData name="Original Launch Unix" data={capsule.original_launch_unix}/>
         <CapsuleData name="Landings" data={capsule.landings}/>
         <CapsuleData name="Type" data={capsule.type}/>
-        <CapsuleData name="Details" data={capsule.details}/>
+        <CapsuleData name="Details" data={capsule.details ? capsule.details : "No details found"}/>
         <CapsuleData name="Reuse Count" data={capsule.reuse_count}/>
         {capsule.missions.length > 0 && capsule.missions.map((mission, index) => {
           return <CapsuleData key={index} name={`${mission.name} Mission`} data={"Flight: " + mission.flight}/>

@@ -13,7 +13,8 @@ const Checkbox = ({id, name, handleFilter, checked}) => {
         checked={checked}
         className="appearance-none w-10 h-10 border-2"
       />
-      <BsCheckLg className={`${checked ? 'opacity-1 animate-check': 'opacity-0'} absolute top-1.5 left-1 w-7 h-7 transition`}/>
+      <BsCheckLg
+        className={`${checked ? 'opacity-1 animate-check' : 'opacity-0'} absolute top-1 left-1 w-7 h-7 transition`}/>
       <p>{name}</p>
     </label>
   );
