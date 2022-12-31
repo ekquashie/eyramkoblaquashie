@@ -62,6 +62,7 @@ const Search = () => {
 
   const handleFilter = (e) => {
     const {name, dataset: {filter}} = e.target;
+    setPage(1);
     return setFilters({...filters, [filter]: {...filters[filter], [name]: !filters[filter][name]}});
   }
 
@@ -83,7 +84,7 @@ const Search = () => {
       {modalOn && <ModalOverlay setModalOn={setModalOn}>
         <CapsuleDetail capsule={capsule}/>
       </ModalOverlay>}
-      <section className="flex flex-col justify-center items-center w-full py-10 px-20">
+      <section className="flex flex-col justify-center items-center w-full pt-10 px-20">
         <div className="flex items-center space-x-2 w-9/12">
           <input
             ref={searchRef}
@@ -93,7 +94,7 @@ const Search = () => {
             onChange={handleSearch}
           />
         </div>
-        <div className="mt-2">
+        <div className="my-5">
           <button onClick={() => setPage(1)}
                   className="border py-2 px-4 hover:bg-black hover:text-white rounded-l-md">{"<<"}</button>
           {range.map((range, index) => {
