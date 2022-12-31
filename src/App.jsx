@@ -1,8 +1,7 @@
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import Search from "./tools/components/search/search.jsx";
 import Header from "./tools/components/header/header.jsx";
-import DataGrid from "./tools/components/data-grid/data-grid.jsx";
-import ScrollToTop from "./tools/components/to-top/ScrollToTop";
+import ToTop from "./tools/components/to-top/to-top.jsx";
 
 function App() {
 
@@ -10,8 +9,7 @@ function App() {
     <main>
       <Header/>
       <Search/>
-      <DataGrid/>
-      <ScrollToTop/>
+      <ToTop/>
     </main>
   );
 }
