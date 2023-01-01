@@ -9,7 +9,7 @@ const Capsules = ({capsules, search, onView, page, rowsPerPage}) => {
 
   useEffect(() => {
     setRange(range);
-  }, [range])
+  }, [range.length])
 
   return slice.filter((capsule) => capsule.capsule_serial.toLowerCase().includes(search)).map((capsule, index) => {
     return <Capsule

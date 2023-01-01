@@ -5,18 +5,17 @@ import falcon9 from "../../../assets/falcon9.png";
 const Header = () => {
   return (
     <section className="relative flex justify-center items-center h-screen rounded-md">
-      <div className="flex pl-20 items-center h-full w-7/12 text-white bg-black">
+      <div className="hidden sm:flex items-center justify-center h-full w-full sm:w-7/12 text-white bg-black">
         <div className="animate-fadeIn">
-          <h1 className="text-9xl font-source font-bold animate-slideLeft">Motion
+          <h1 className="text-center text-4xl sm:text-6xl md:text-8xl font-source font-bold animate-slideLeft">Motion
             <br/>Is <br/>Immersive
           </h1>
         </div>
-        <button></button>
       </div>
-      <div className="flex justify-center items-center w-5/12 h-full bg-hero-background bg-cover bg-no-repeat">
-        <img src={falcon9} height={800} width={50} className="animate-bounce1" alt="falcon 9"/>
+      <div className="flex justify-center items-center w-full sm:w-5/12 h-screen bg-hero-background bg-cover bg-no-repeat">
+        <img src={falcon9} className="h-[80%] w-12 md:w-[50px] animate-bounce1" alt="falcon 9"/>
       </div>
-      <SlArrowDown className="absolute text-white w-8 h-8 animate-bounce opacity-50 bottom-4"/>
+      <SlArrowDown className=" absolute text-white w-8 h-8 animate-bounce opacity-70 bottom-4"/>
     </section>
   );
 }

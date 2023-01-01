@@ -8,7 +8,7 @@ const ModalOverlay = ({children, setModalOn}) => {
         onClick={() => {
           setModalOn(false);
         }}
-        className="absolute top-2 right-2 xs:top-3 xs:right-3 md:text-white w-8 h-8 cursor-pointer"
+        className="absolute top-2 right-2 text-white w-8 h-8 cursor-pointer"
       />
       {children}
     </div>
