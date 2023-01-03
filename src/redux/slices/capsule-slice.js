@@ -6,7 +6,7 @@ import {getUniqueValuesByKey} from "../../tools/libraries/libraries.js";
 export const getCapsules = createAsyncThunk("getCapsules", async({}, thunkAPI) => {
   try{
     return request(END_POINTS.getCapsules, "GET");
-  } catch {
+  } catch(error) {
     return thunkAPI.rejectWithValue(error);
   }
 });

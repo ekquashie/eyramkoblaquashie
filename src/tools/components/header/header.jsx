@@ -4,7 +4,7 @@ import falcon9 from "../../../assets/falcon9.png";
 
 const Header = () => {
   return (
-    <section className="relative flex justify-center items-center h-screen rounded-md">
+    <header className="relative flex justify-center items-center h-screen rounded-md">
       <div className="hidden sm:flex items-center justify-center h-full w-full sm:w-7/12 text-white bg-black">
         <div className="animate-fadeIn">
           <h1 className="text-center text-4xl sm:text-6xl md:text-8xl font-source font-bold animate-slideLeft">Motion
@@ -16,7 +16,7 @@ const Header = () => {
         <img src={falcon9} className="h-[80%] w-12 md:w-[50px] animate-bounce1" alt="falcon 9"/>
       </div>
       <SlArrowDown className=" absolute text-white w-8 h-8 animate-bounce opacity-70 bottom-4"/>
-    </section>
+    </header>
   );
 }
 

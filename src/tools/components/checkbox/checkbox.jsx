@@ -6,6 +6,7 @@ const Checkbox = ({id, name, handleFilter, checked}) => {
     <label htmlFor={name} className="relative flex items-center my-1 cursor-pointer space-x-1 relative">
       <input
         id={name}
+        data-testid="filter-checkbox"
         data-filter={id}
         type="checkbox"
         name={name}
