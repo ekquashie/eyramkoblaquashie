@@ -26,10 +26,10 @@ const ToTop = () => {
   }
 
   return (
-    <div onClick={() => scrollToTop()} onMouseOver={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
+    <button data-testid="to-top-button" onClick={() => scrollToTop()} onMouseOver={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
          className={`${showToTop ? 'block': 'hidden'} animate-fadeIn z-50 fixed right-5 bottom-10 flex justify-center items-center w-16 h-16 rounded-full bg-white drop-shadow-lg cursor-pointer`}>
       <img alt="falcon 9" height={10} width={8} src={falcon9} className={`${hovered ? "animate-bounce1" : ""}`}/>
-    </div>
+    </button>
   );
 }
 

@@ -4,7 +4,7 @@ import CapsuleData from "./capsule-data.jsx";
 
 const CapsuleDetail = ({capsule}) => {
   return (
-    <div className="w-9/12 w-10/12 h-7/12 flex items-center justify-center md:justify-start md: items-start animate-slideUp overflow-auto">
+    <div role="detail-modal" className="w-9/12 w-10/12 h-7/12 flex items-center justify-center md:justify-start md: items-start animate-slideUp overflow-auto">
       <img alt="spacex" src={spacex} className="hidden md:block md:w-6/12 h-full"/>
       <div className="bg-white w-full md:w-6/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 p-5">
         <CapsuleData name="Capsule Serial" data={capsule.capsule_serial}/>
